@@ -1,16 +1,16 @@
 {
   "projectType": "library",
-  "root": "libs/shared/data-access-model",
-  "sourceRoot": "libs/shared/data-access-model/src",
+  "root": "libs/gamb-idle/ionic/ui-headers",
+  "sourceRoot": "libs/gamb-idle/ionic/ui-headers/src",
   "prefix": "spectacle-development",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/libs/shared/data-access-model"
+        "coverage/libs/gamb-idle/ionic/ui-headers"
       ],
       "options": {
-        "jestConfig": "libs/shared/data-access-model/jest.config.js",
+        "jestConfig": "libs/gamb-idle/ionic/ui-headers/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -18,8 +18,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/shared/data-access-model/src/**/*.ts",
-          "libs/shared/data-access-model/src/**/*.html"
+          "libs/gamb-idle/ionic/ui-headers/src/**/*.ts",
+          "libs/gamb-idle/ionic/ui-headers/src/**/*.html"
         ]
       }
     }

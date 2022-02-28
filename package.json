@@ -1,5 +1,5 @@
 {
-  "name": "openforge-ionic-monorepo-example",
+  "name": "gamb-idle",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -72,6 +72,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.1",
+    "npm": "^8.5.2",
     "nx": "^13.7.3",
     "phaser": "^3.55.2",
     "rxjs": "~7.4.0",

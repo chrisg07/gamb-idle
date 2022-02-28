@@ -1,0 +1,116 @@
+{
+  "projectType": "application",
+  "root": "apps/gamb-idle",
+  "sourceRoot": "apps/gamb-idle/src",
+  "prefix": "opneforge",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/gamb-idle",
+        "index": "apps/gamb-idle/src/index.html",
+        "main": "apps/gamb-idle/src/main.ts",
+        "polyfills": "apps/gamb-idle/src/polyfills.ts",
+        "tsConfig": "apps/gamb-idle/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/gamb-idle/src/assets",
+          {
+            "glob": "**/*.svg",
+            "input": "node_modules/ionicons/dist/ionicons/svg",
+            "output": "./svg"
+          }
+        ],
+        "styles": [
+          "apps/gamb-idle/src/global.scss"
+        ],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "2mb",
+              "maximumError": "3mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/gamb-idle/src/environments/environment.ts",
+              "with": "apps/gamb-idle/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "gamb-idle:build:production"
+        },
+        "development": {
+          "browserTarget": "gamb-idle:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "gamb-idle:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/gamb-idle/src/**/*.ts",
+          "apps/gamb-idle/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/apps/gamb-idle"
+      ],
+      "options": {
+        "jestConfig": "apps/gamb-idle/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/gamb-idle/**/*.css",
+          "apps/gamb-idle/**/*.scss"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

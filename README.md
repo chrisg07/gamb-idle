@@ -7,16 +7,16 @@ This repository will give you a great starting point!
 # Instructions
 
 1. Clone the repository using 'Use template' (and don't forget to give us a Star / Follow on Github, please!)
-2. Search + Replace all instances of 'example-app-e2e' with your app name (important to do this first)
-3. Search + Replace all instances of 'example-app' with your app name
-4. Change the folder names for example-app and example-app-e2e to what you named for steps #1 and #2
-5. Search + Replace all instances of 'openforge-ionic-monorepo-example' with your project name
-6. Search + Replace 'company-name' with your company name.  This is the NX project scope that allows you to import libraries using @company-name
+2. Search + Replace all instances of 'gamb-idle-e2e' with your app name (important to do this first)
+3. Search + Replace all instances of 'gamb-idle' with your app name
+4. Change the folder names for gamb-idle and gamb-idle-e2e to what you named for steps #1 and #2
+5. Search + Replace all instances of 'gamb-idle' with your project name
+6. Search + Replace 'spectacle-development' with your company name.  This is the NX project scope that allows you to import libraries using @spectacle-development
 
 That's it for the renaming!  Now to test...
 
 7. npm install
-8. npx nx run example-app:serve (where example-app is the name you replaced with above)
+8. npx nx run gamb-idle:serve (where gamb-idle is the name you replaced with above)
 
 You should now load your example app!
 
@@ -50,11 +50,11 @@ Run `nx g @nrwl/react:lib my-lib` to generate a library.
 
 > You can also use any of the plugins above to generate libraries as well.
 
-Libraries are shareable across libraries and applications. They can be imported from `@openforge-ionic-monorepo-example/mylib`.
+Libraries are shareable across libraries and applications. They can be imported from `@gamb-idle/mylib`.
 
 ## Development server
 
-Run `npx nx run example-app:serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run `npx nx run gamb-idle:serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

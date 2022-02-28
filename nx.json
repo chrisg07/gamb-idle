@@ -1,5 +1,5 @@
 {
-  "npmScope": "company-name",
+  "npmScope": "spectacle-development",
   "affected": {
     "defaultBase": "develop"
   },
@@ -54,5 +54,5 @@
       "style": "scss"
     }
   },
-  "defaultProject": "example-app"
+  "defaultProject": "gamb-idle"
 }
