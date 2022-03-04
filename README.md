@@ -6,19 +6,8 @@ This repository will give you a great starting point!
 
 # Instructions
 
-1. Clone the repository using 'Use template' (and don't forget to give us a Star / Follow on Github, please!)
-2. Search + Replace all instances of 'gamb-idle-e2e' with your app name (important to do this first)
-3. Search + Replace all instances of 'gamb-idle' with your app name
-4. Change the folder names for gamb-idle and gamb-idle-e2e to what you named for steps #1 and #2
-5. Search + Replace all instances of 'gamb-idle' with your project name
-6. Search + Replace 'spectacle-development' with your company name.  This is the NX project scope that allows you to import libraries using @spectacle-development
-
-That's it for the renaming!  Now to test...
-
-7. npm install
-8. npx nx run gamb-idle:serve (where gamb-idle is the name you replaced with above)
-
-You should now load your example app!
+1. npm install
+2. npx nx run gamb-idle:serve
 
 # Important - Utilizing this Repo
 
@@ -34,7 +23,7 @@ nx g nx-stylelint:configuration --project <projectName>
 
 ## Generate an application
 
-The normal NX command to generate an app is `nx g @nrwl/react:app my-app` ; however, there are some special steps to generate an Ionic App.  These are defined well in [Eric Jeker's post here](https://medium.com/@eric.jeker/how-to-integrate-ionic-in-nrwl-nx-3493fcb7e85e)
+These are defined well in [Eric Jeker's post here](https://medium.com/@eric.jeker/how-to-integrate-ionic-in-nrwl-nx-3493fcb7e85e)
 
 When using Nx, you can create multiple applications and libraries in the same workspace.
 

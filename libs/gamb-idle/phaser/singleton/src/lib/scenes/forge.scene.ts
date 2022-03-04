@@ -14,6 +14,7 @@ export class ForgeScene extends Phaser.Scene {
             console.log('forge.scene.ts', 'Preloading Assets...');
             // * First, set the base URL since we're just loading from the main application's asset folder
             this.load.setBaseURL('http://localhost:4200/');
+            this.load.spritesheet('coinflip', 'assets/sprites/coin3_20x20.png', { frameWidth: 20, frameHeight: 20 });
         } catch (e) {
             console.error('preloader.scene.ts', 'error preloading', e);
         }
@@ -24,15 +25,17 @@ export class ForgeScene extends Phaser.Scene {
      */
     async create() {
         console.log('forge.scene.ts', 'Creating Assets...', this.scale.width, this.scale.height);
-
-        // * Setup the Background Image
-        this.backgroundImage = this.add.image(0, 0, this.backgroundKey);
+        const config = {
+            key: 'coinflipAnimation',
+            frames: this.anims.generateFrameNumbers('coinflip', { start: 0, end: 9 }),
+            frameRate: 10,
+            repeat: -1,
+        };
+        this.anims.create(config);
+        this.add.sprite(50, 50, 'coinflip').play('coinflipAnimation');
 
         // * Now handle scrolling
         this.cameras.main.setBackgroundColor('0xEBF0F3');
-
-        // * Set cameras to the correct position
-        this.cameras.main.setZoom(0.25);
 
         this.scale.on('resize', this.resize, this);
     }
