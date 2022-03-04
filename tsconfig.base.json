@@ -1,45 +1,28 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@spectacle-development/gamb-idle/ionic/ui-buttons": [
-        "libs/gamb-idle/ionic/ui-buttons/src/index.ts"
-      ],
-      "@spectacle-development/gamb-idle/ionic/ui-headers": [
-        "libs/gamb-idle/ionic/ui-headers/src/index.ts"
-      ],
-      "@spectacle-development/gamb-idle/ionic/ui-modals": [
-        "libs/gamb-idle/ionic/ui-modals/src/index.ts"
-      ],
-      "@spectacle-development/gamb-idle/phaser/singleton": [
-        "libs/gamb-idle/phaser/singleton/src/index.ts"
-      ],
-      "@spectacle-development/gamb-idle/phaser/ui-modals": [
-        "libs/gamb-idle/phaser/ui-modals/src/index.ts"
-      ],
-      "@spectacle-development/shared/data-access-model": [
-        "libs/shared/data-access-model/src/index.ts"
-      ]
-    }
-  },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2017", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@spectacle-development/gamb-idle/ionic/ui-buttons": ["libs/gamb-idle/ionic/ui-buttons/src/index.ts"],
+            "@spectacle-development/gamb-idle/ionic/ui-headers": ["libs/gamb-idle/ionic/ui-headers/src/index.ts"],
+            "@spectacle-development/gamb-idle/ionic/ui-modals": ["libs/gamb-idle/ionic/ui-modals/src/index.ts"],
+            "@spectacle-development/gamb-idle/phaser/singleton": ["libs/gamb-idle/phaser/singleton/src/index.ts"],
+            "@spectacle-development/gamb-idle/phaser/ui-modals": ["libs/gamb-idle/phaser/ui-modals/src/index.ts"],
+            "@spectacle-development/services": ["libs/services/src/index.ts"],
+            "@spectacle-development/shared/data-access-model": ["libs/shared/data-access-model/src/index.ts"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
 }

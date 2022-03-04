@@ -18,6 +18,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@spectacle-development/services": [
+        "libs/services/src/index.ts"
+      ],
       "@spectacle-development/gamb-idle/ionic/ui-buttons": [
         "libs/gamb-idle/ionic/ui-buttons/src/index.ts"
       ],

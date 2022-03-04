@@ -1,13 +1,14 @@
 {
-  "version": 2,
-  "projects": {
-    "gamb-idle": "apps/gamb-idle",
-    "gamb-idle-e2e": "apps/gamb-idle-e2e",
-    "gamb-idle-ionic-ui-buttons": "libs/gamb-idle/ionic/ui-buttons",
-    "gamb-idle-ionic-ui-headers": "libs/gamb-idle/ionic/ui-headers",
-    "gamb-idle-ionic-ui-modals": "libs/gamb-idle/ionic/ui-modals",
-    "gamb-idle-phaser-singleton": "libs/gamb-idle/phaser/singleton",
-    "gamb-idle-phaser-ui-modals": "libs/gamb-idle/phaser/ui-modals",
-    "data-access-model": "libs/shared/data-access-model"
-  }
+    "version": 2,
+    "projects": {
+        "data-access-model": "libs/shared/data-access-model",
+        "gamb-idle": "apps/gamb-idle",
+        "gamb-idle-e2e": "apps/gamb-idle-e2e",
+        "gamb-idle-ionic-ui-buttons": "libs/gamb-idle/ionic/ui-buttons",
+        "gamb-idle-ionic-ui-headers": "libs/gamb-idle/ionic/ui-headers",
+        "gamb-idle-ionic-ui-modals": "libs/gamb-idle/ionic/ui-modals",
+        "gamb-idle-phaser-singleton": "libs/gamb-idle/phaser/singleton",
+        "gamb-idle-phaser-ui-modals": "libs/gamb-idle/phaser/ui-modals",
+        "services": "libs/services"
+    }
 }
